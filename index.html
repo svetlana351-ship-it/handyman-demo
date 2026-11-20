@@ -68,9 +68,14 @@
   .bar__tel { text-decoration: none; font-weight: 600; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
   @media (max-width: 700px) {
     .bar__tel { display: none; }
-    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .9rem; }
-    .bar__right { gap: var(--v-2); }
-    .bar__mark { font-size: 1.1rem; }
+    .bar .v-btn { padding: 0 .7em; min-height: 40px; font-size: .8rem; white-space: nowrap; }
+    .bar__right { gap: .5rem; }
+    .bar__mark { font-size: 1rem; }
+  }
+  @media (max-width: 400px) {
+    .bar .v-btn { font-size: .76rem; padding: 0 .55em; }
+    .bar__mark { font-size: .95rem; }
+    .bar__lang a { padding: 0 .2em; }
   }
   @media (max-width: 860px) { .bar.is-scrolled { background: rgb(238 237 234 / .96); } }
   /* телефон: подписи не мельче 15 px (--v-t-sm на 390 px = 14 px) */
@@ -108,21 +113,22 @@
   .hero__note .hero__int { color: var(--v-ink); font-size: var(--v-t-sm); }
   @media (max-width: 1100px) { .hero__note { display: none; } }
   @media (max-width: 860px) {
-    .hero__half img { top: -24px; height: calc(48svh + 48px); }
+    .hero__half img { top: -24px; height: calc(44svh + 44px); }
     .hero__half--voda img { object-position: 82% 50%; }
     .hero__half--svet img { object-position: 72% 50%; }
-    .hero__seam { width: 3px; margin-left: -1.5px; bottom: 50%; }
-    .hero__floor { height: 70%; background: linear-gradient(to top, var(--v-canvas) 0%, var(--v-canvas) 66%, rgb(238 237 234 / .7) 80%, transparent 100%); }
+    .hero__seam { width: 3px; margin-left: -1.5px; bottom: 54%; }
+    .hero__floor { height: 76%; background: linear-gradient(to top, var(--v-canvas) 0%, var(--v-canvas) 52%, rgb(238 237 234 / .92) 72%, rgb(238 237 234 / .45) 88%, transparent 100%); }
+    #top .v-scrim--band { background: linear-gradient(to top, rgb(255 255 255 / .96) 0%, rgb(255 255 255 / .8) 34%, rgb(255 255 255 / .35) 58%, transparent 82%); }
     .hero__tag { top: 4.6rem; font-size: .72rem; padding: .45em .8em .45em .7em; }
     .hero__tag--svet { left: calc(50% + .6rem); }
     .hero__tag--voda { left: .6rem; }
-    .hero__copy { bottom: clamp(2.5rem, 6vh, 4rem); }
-    .hero__copy .v-display { font-size: var(--v-t-2xl); max-width: none; }
-    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-4); }
-    .hero__label { margin-bottom: var(--v-3); }
-    .hero__cta { margin-top: var(--v-5); gap: var(--v-2) var(--v-5); }
+    .hero__copy { bottom: clamp(2rem, 5vh, 3rem); }
+    .hero__copy .v-display { font-size: clamp(1.7rem, 7.4vw, 2.3rem); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); }
+    .hero__label { margin-bottom: var(--v-2); }
+    .hero__cta { margin-top: var(--v-3); gap: var(--v-2) var(--v-5); }
   }
-  @media (max-width: 600px) and (max-height: 700px) { .hero__half img { height: calc(40svh + 48px); } .hero__seam { bottom: 58%; } }
+  @media (max-width: 600px) and (max-height: 700px) { .hero__half img { height: calc(38svh + 40px); } .hero__seam { bottom: 60%; } }
 
   /* ---- фирменный ход: трекер «где сейчас мастер» ---------------------------- */
   .track { position: fixed; left: 0; right: 0; bottom: 0; z-index: 32; display: grid; grid-template-columns: minmax(15rem, 20rem) 1fr; align-items: center; column-gap: var(--v-8);
