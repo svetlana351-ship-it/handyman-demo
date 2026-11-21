@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{{Firma}} · Klempner und Elektriker auf Vor-Ort-Termin</title>
-<meta name="description" content="Klempner und Elektriker mit Vor-Ort-Termin in {{Stadt}}: Zeitfenster und Preis für Standardarbeiten vor der Anfahrt, Standardteile dabei, Gewährleistung schriftlich.">
+<title>FixWerk Meisterbetrieb · Klempner und Elektriker auf Vor-Ort-Termin</title>
+<meta name="description" content="Klempner und Elektriker mit Vor-Ort-Termin in Berlin: Zeitfenster und Preis für Standardarbeiten vor der Anfahrt, Standardteile dabei, Gewährleistung schriftlich.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
-<meta property="og:site_name" content="{{Firma}}">
-<meta property="og:title" content="{{Firma}} · Klempner und Elektriker auf Vor-Ort-Termin">
-<meta property="og:description" content="Klempner und Elektriker in {{Stadt}}: schreiben Sie, was passiert ist, und fügen Sie ein Foto an. Wir antworten mit Zeitfenster und Preis für die Standardarbeit.">
-<meta property="og:url" content="{{Website}}">
-<meta property="og:image" content="{{Website}}/assets/og.jpg">
+<meta property="og:site_name" content="FixWerk Meisterbetrieb">
+<meta property="og:title" content="FixWerk Meisterbetrieb · Klempner und Elektriker auf Vor-Ort-Termin">
+<meta property="og:description" content="Klempner und Elektriker in Berlin: schreiben Sie, was passiert ist, und fügen Sie ein Foto an. Wir antworten mit Zeitfenster und Preis für die Standardarbeit.">
+<meta property="og:url" content="https://svetlana351-ship-it.github.io/handyman-demo">
+<meta property="og:image" content="https://svetlana351-ship-it.github.io/handyman-demo/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%274%27 y=%274%27 width=%2724%27 height=%2724%27 rx=%277%27 fill=%27%23b04408%27/%3E%3Crect x=%2714%27 y=%279%27 width=%274%27 height=%2714%27 rx=%272%27 fill=%27%231c1f23%27/%3E%3C/svg%3E">
 <link rel="stylesheet" href="vibe.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","additionalType":["https://schema.org/Plumber","https://schema.org/Electrician"],"name":"{{Firma}}","description":"Klempner und Elektriker mit Vor-Ort-Termin: Zeitfenster und Preis für Standardarbeiten vor der Anfahrt, Standardteile dabei, Gewährleistung schriftlich.","url":"{{Website}}","image":"{{Website}}/assets/og.jpg","telephone":"{{Telefon}}","openingHours":"{{Öffnungszeiten}}","areaServed":"{{Stadt}}","address":{"@type":"PostalAddress","addressLocality":"{{Stadt}}","addressCountry":"DE"},"priceRange":"auf Anfrage"}
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","additionalType":["https://schema.org/Plumber","https://schema.org/Electrician"],"name":"FixWerk Meisterbetrieb","description":"Klempner und Elektriker mit Vor-Ort-Termin: Zeitfenster und Preis für Standardarbeiten vor der Anfahrt, Standardteile dabei, Gewährleistung schriftlich.","url":"https://svetlana351-ship-it.github.io/handyman-demo","image":"https://svetlana351-ship-it.github.io/handyman-demo/assets/og.jpg","telephone":"+49 30 555 017 42","openingHours":"Mo-Sa 08:00-20:00","areaServed":"Berlin","address":{"@type":"PostalAddress","addressLocality":"Berlin","addressCountry":"DE"},"priceRange":"auf Anfrage"}
 </script>
 <style>
   /* ---- тема: шесть цветов, два шрифта --------------------------------- */
@@ -250,7 +250,33 @@
   .close__hint { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 44ch; }
   .close__meta { display: grid; gap: var(--v-3); color: var(--v-ink-soft); padding-top: var(--v-2); }
   .close__meta b { color: var(--v-ink); font-weight: 600; display: block; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; margin-bottom: .2em; }
-  .foot { display: flex; justify-content: space-between; gap: var(--v-4); padding: var(--v-6) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  /* ---- отзывы ------------------------------------------------------------ */
+  .reviews__head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--v-6); flex-wrap: wrap; }
+  .reviews__score { display: grid; justify-items: end; gap: .15rem; }
+  .reviews__score .v-nums { font-family: var(--v-font-display); font-weight: var(--v-display-weight, 500); font-size: var(--v-t-2xl); line-height: 1; }
+  .reviews__stars { color: var(--v-accent); letter-spacing: .12em; font-size: var(--v-t-sm); }
+  .reviews__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--v-5); margin-top: var(--v-6); }
+  .reviews__card { margin: 0; background: var(--v-surface); border: 1px solid var(--v-hair); border-radius: var(--v-radius); padding: var(--v-5); display: grid; gap: var(--v-3); align-content: start; box-shadow: var(--v-e1); }
+  .reviews__card blockquote { margin: 0; font-size: var(--v-t-base); line-height: 1.55; }
+  .reviews__card figcaption { display: grid; gap: .1rem; }
+  .reviews__card figcaption span { font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .reviews__grid { grid-template-columns: 1fr; }
+    .reviews__score { justify-items: start; }
+  }
+  /* ---- футер -------------------------------------------------------------- */
+  .foot { border-top: 1px solid var(--v-hair); margin-top: var(--v-6); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .foot__grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: var(--v-6); padding: var(--v-6) 0; }
+  .foot__brand p { max-width: 42ch; margin: var(--v-3) 0 0; }
+  .foot__logo { font-family: var(--v-font-display); font-weight: var(--v-display-weight, 500); font-size: var(--v-t-lg); color: var(--v-ink); }
+  .foot__logo i { display: inline-block; width: .72em; height: .72em; border-radius: .22em; background: var(--v-accent); margin-right: .4em; }
+  .foot__logo em { font-style: normal; color: var(--v-ink-soft); }
+  .foot__col { display: grid; gap: .45rem; align-content: start; }
+  .foot__col b { font-size: var(--v-t-xs); text-transform: uppercase; letter-spacing: var(--v-track-wide); color: var(--v-ink-soft); margin-bottom: .35rem; }
+  .foot__col a { color: var(--v-ink); text-decoration: none; }
+  .foot__col a:hover { color: var(--v-accent); }
+  .foot__legal { display: grid; gap: .35rem; padding: var(--v-4) 0 calc(var(--v-6) + env(safe-area-inset-bottom)); border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); }
+  @media (max-width: 860px) { .foot__grid { grid-template-columns: 1fr; gap: var(--v-5); } }
   @media (max-width: 860px) {
     .close { min-height: 0; padding: clamp(5rem, 12vh, 7rem) var(--v-gutter) calc(6rem + env(safe-area-inset-bottom)); }
     .close__inner { grid-template-columns: 1fr; gap: var(--v-7); padding-bottom: var(--v-8); }
@@ -265,7 +291,7 @@
   <div class="v-grain" aria-hidden="true"></div>
 
   <header class="bar">
-    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>{{Firma}}</a>
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>FixWerk Meisterbetrieb</a>
     <nav class="bar__nav" aria-label="Menü">
       <a href="#kak" data-ru="Этапы">Ablauf</a>
       <a href="#ceny" data-ru="Цены">Preise</a>
@@ -276,8 +302,8 @@
       <span class="bar__lang" aria-label="Sprache">
         <a href="?lang=de" data-lang="de" hreflang="de" lang="de">DE</a><i aria-hidden="true"></i><a href="?lang=ru" data-lang="ru" hreflang="ru" lang="ru">RU</a>
       </span>
-      <a class="bar__tel" href="tel:{{Telefon}}">{{Telefon}}</a>
-      <a class="v-btn" href="{{Anfrage-Link}}" rel="noopener" data-ru="Вызвать мастера">Anfragen</a>
+      <a class="bar__tel" href="tel:+493055501742">+49 30 555 017 42</a>
+      <a class="v-btn" href="https://wa.me/493055501742" rel="noopener" data-ru="Вызвать мастера">Anfragen</a>
     </nav>
   </header>
 
@@ -307,17 +333,17 @@
 
         <div class="hero__note" data-v-cue="0 0.6 0" data-v-rise="0">
           <span class="v-label" data-ru="Принимаем вызовы">Annahmezeiten</span>
-          <span class="v-nums">{{Öffnungszeiten}}</span>
-          <span class="hero__int" data-ru="Интервал приезда {{Zeitfenster}}">Anfahrtsintervall {{Zeitfenster}}</span>
+          <span class="v-nums">Mo–Sa 8–20 Uhr</span>
+          <span class="hero__int" data-ru="Интервал приезда сегодня 16–18">Anfahrtsintervall heute 16–18 Uhr</span>
         </div>
 
         <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.82 0">
           <span class="v-label hero__label" data-ru="Течь, смеситель, унитаз, розетка, автомат · выезд на дом">Leck, Armatur, WC, Schalter, Sicherung · Vor-Ort-Termin</span>
-          <h1 class="v-display v-display--xl" data-v-kinetic="lines" data-ru="Сантехник и электрик на дом в {{Stadt}}: цена до приезда">Klempner und Elektriker in {{Stadt}} – Gewährleistung schriftlich</h1>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines" data-ru="Сантехник и электрик на дом в Берлине: цена до приезда">Klempner und Elektriker in Berlin – Gewährleistung schriftlich</h1>
           <p class="v-lede" data-ru="Течёт или искрит? Напишите, что случилось, и пришлите фото – ответим интервалом приезда и ценой на типовую работу. Детали с собой.">Wir beheben Lecks und tauschen Armaturen, Schalter und Sicherungen. Preis vor Arbeitsbeginn, Standardteile dabei, Gewährleistung – im Protokoll.</p>
           <div class="hero__cta">
-            <a class="v-btn" href="{{Anfrage-Link}}" rel="noopener" data-ru="Вызвать мастера">Anfragen</a>
-            <a class="hero__tel" href="tel:{{Telefon}}" data-ru="или позвоните: <b>{{Telefon}}</b>">oder anrufen: <b>{{Telefon}}</b></a>
+            <a class="v-btn" href="https://wa.me/493055501742" rel="noopener" data-ru="Вызвать мастера">Anfragen</a>
+            <a class="hero__tel" href="tel:+493055501742" data-ru="или позвоните: <b>+49 30 555 017 42</b>">oder anrufen: <b>+49 30 555 017 42</b></a>
           </div>
         </div>
       </div>
@@ -356,7 +382,7 @@
         <div class="v-copy v-copy--lead steps__copy" data-v-cue="0 0.3 0 0.05">
           <span class="chip" data-ru="<i aria-hidden="true"></i>Статус · интервал и цена"><i aria-hidden="true"></i>Status · Zeitfenster und Preis</span>
           <h2 class="v-display v-display--lg" data-ru="Вы написали, что течёт. Мы ответили интервалом и ценой">Sie haben geschrieben, dass es tropft. Wir antworten mit Zeitfenster und Preis</h2>
-          <p class="v-lede" data-ru="Двух строк и фото достаточно. Интервал приезда {{Zeitfenster}}, цена по прайсу ниже, и на месте она не меняется.">Zwei Zeilen und ein Foto genügen. Anfahrtsintervall {{Zeitfenster}}, Preis nach der Liste unten – vor Ort ändert er sich nicht.</p>
+          <p class="v-lede" data-ru="Двух строк и фото достаточно. Интервал приезда сегодня 16–18, цена по прайсу ниже, и на месте она не меняется.">Zwei Zeilen und ein Foto genügen. Anfahrtsintervall heute 16–18 Uhr, Preis nach der Liste unten – vor Ort ändert er sich nicht.</p>
         </div>
         <div class="v-copy v-copy--lead steps__copy" data-v-cue="0.28 0.72 0.05 0.05">
           <span class="chip" data-ru="<i aria-hidden="true"></i>Статус · мастер выехал"><i aria-hidden="true"></i>Status · Meister unterwegs</span>
@@ -376,7 +402,7 @@
       <div class="v-wrap prices">
         <div class="v-stack" data-v-in data-v-stagger="60">
           <h2 class="v-display v-display--lg" data-ru="Цена на типовые работы известна до приезда">Der Preis für Standardarbeiten ist vor der Anfahrt bekannt</h2>
-          <p class="v-body v-soft" data-ru="Ориентиры на работу без стоимости деталей. Точную сумму называем по описанию и фото до выезда, на месте она не меняется. <span class="prices__seg">Выезжаем: {{Einsatzgebiet}}.</span>">Richtwerte für Arbeit ohne Material. Die Summe nennen wir anhand Ihrer Beschreibung und Fotos vor der Anfahrt, vor Ort unverändert. <span class="prices__seg">Einsatzgebiet: {{Einsatzgebiet}}.</span></p>
+          <p class="v-body v-soft" data-ru="Ориентиры на работу без стоимости деталей. Точную сумму называем по описанию и фото до выезда, на месте она не меняется. <span class="prices__seg">Выезжаем: Берлин и окрестности (20 км).</span>">Richtwerte für Arbeit ohne Material. Die Summe nennen wir anhand Ihrer Beschreibung und Fotos vor der Anfahrt, vor Ort unverändert. <span class="prices__seg">Einsatzgebiet: Berlin und Umland (20 km).</span></p>
           <div class="prices__cols">
             <div class="plist">
               <h3 class="v-label" data-ru="Сантехника">Sanitär</h3>
@@ -420,13 +446,47 @@
           <ul class="promise__facts">
             <li><strong data-ru="Цена не меняется после начала работы">Der Preis ändert sich nach Arbeitsbeginn nicht</strong><span data-ru="Названная до выезда сумма и есть итоговая. Нашли что-то ещё – скажем до работы и спросим, делать ли.">Die vor der Anfahrt genannte Summe ist die Endsumme. Zusatzarbeiten besprechen wir vorher und fragen, ob wir sie machen sollen.</span></li>
             <li><strong data-ru="Стандартные детали с собой">Standardteile dabei</strong><span data-ru="Подводка, сифоны, шаровые краны, автоматы, розетки и выключатели. Нужной нет – привезём, цену согласуем до установки.">Schläuche, Siphons, Kugelhähne, Sicherungen, Steckdosen und Schalter. Fehlt ein Teil – holen wir es, der Preis wird vor dem Einbau abgestimmt.</span></li>
-            <li><strong data-ru="Гарантия на работу {{Garantie}}">Gewährleistung {{Garantie}}</strong><span data-ru="Срок записан в акте. Снова потекло или выбило по нашей вине – приедем и переделаем бесплатно.">Die Frist steht im Protokoll. Tropft es wieder oder fliegt die Sicherung wegen unserer Arbeit – kommen wir kostenlos nach.</span></li>
+            <li><strong data-ru="Гарантия на работу 24 месяца">Gewährleistung 24 Monate</strong><span data-ru="Срок записан в акте. Снова потекло или выбило по нашей вине – приедем и переделаем бесплатно.">Die Frist steht im Protokoll. Tropft es wieder oder fliegt die Sicherung wegen unserer Arbeit – kommen wir kostenlos nach.</span></li>
             <li><strong data-ru="После нас сухо и чисто">Nach uns: trocken und sauber</strong><span data-ru="Старые детали забираем, воду вытираем, упаковку не оставляем.">Alte Teile nehmen wir mit, Wasser wischen wir ab, Verpackung bleibt nicht liegen.</span></li>
           </ul>
         </div>
       </div>
     </section>
 
+
+    <!-- 6 · ОТЗЫВЫ: что говорят заказчики -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f4f3f0" id="otzyvy" aria-label="Kundenbewertungen">
+      <div class="v-wrap reviews">
+        <div class="reviews__head" data-v-in>
+          <div>
+            <h2 class="v-display v-display--md" data-ru="Что говорят заказчики">Was Kunden sagen</h2>
+            <p class="v-body v-soft" data-ru="Отзывы из мессенджера и карточки на Картах: Берлин и окрестности.">Bewertungen aus Messenger und Kartenprofil: Berlin und Umland.</p>
+          </div>
+          <div class="reviews__score" data-v-in>
+            <span class="v-nums">4,9</span>
+            <span class="reviews__stars" aria-label="4,9 von 5 Sternen">★★★★★</span>
+            <span class="v-soft" data-ru="132 отзыва · Google Maps">132 Bewertungen · Google Maps</span>
+          </div>
+        </div>
+        <div class="reviews__grid" data-v-in data-v-stagger="80">
+          <figure class="reviews__card">
+            <div class="reviews__stars" aria-hidden="true">★★★★★</div>
+            <blockquote data-ru="Вечером потек сифон под мойкой. Прислала фото — в 17:00 мастер был на месте, к 17:40 протечки не было. Цена как назвали заранее, ничего не доплатили.">Abends tropfte der Siphon unter der Spüle. Foto geschickt – um 17 Uhr war der Meister da, um 17:40 tropfte nichts mehr. Der Preis blieb wie zugesagt, es gab nichts nachzuzahlen.</blockquote>
+            <figcaption><b>Jana M.</b><span data-ru="Пренцлауер-Берг · 2 недели назад">Prenzlauer Berg · vor 2 Wochen</span></figcaption>
+          </figure>
+          <figure class="reviews__card">
+            <div class="reviews__stars" aria-hidden="true">★★★★★</div>
+            <blockquote data-ru="Автомат постоянно выбивал. За полчаса нашли повреждённый участок кабеля, починили и всё объяснили. Работа аккуратная, мусор за собой убрали.">Die Sicherung flog ständig raus. In einer halben Stunde war die defekte Kabelstelle gefunden und erneuert, alles wurde erklärt. Sauber gearbeitet, der Dreck wurde mitgenommen.</blockquote>
+            <figcaption><b>Markus T.</b><span data-ru="Нойкёльн · месяц назад">Neukölln · vor einem Monat</span></figcaption>
+          </figure>
+          <figure class="reviews__card">
+            <div class="reviews__stars" aria-hidden="true">★★★★★</div>
+            <blockquote data-ru="Розетка искрила и грелась. Приехали за час: заменили автомат и розетку, оставили акт с гарантией на 24 месяца. Спасибо за скорость.">Die Steckdose funkelte und wurde warm. In einer Stunde vor Ort: Sicherung und Steckdose getauscht, Protokoll mit 24 Monaten Gewährleistung dabei. Danke für die schnelle Hilfe.</blockquote>
+            <figcaption><b>Elena R.</b><span data-ru="Шарлоттенбург · 3 недели назад">Charlottenburg · vor 3 Wochen</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
     <!-- 7 · ДЕЙСТВИЕ: одно сообщение с фото -->
     <section data-v-act="flow" data-v-drift="#eeedea" id="vyzov" aria-label="Handwerker anfragen">
@@ -436,21 +496,43 @@
             <h2 class="v-display v-display--lg" data-ru="Напишите, что случилось, и приложите фото">Schreiben Sie, was passiert ist, und fügen Sie ein Foto an</h2>
             <p class="v-lede" data-ru="Ответим интервалом приезда и ценой на типовую работу. Одно сообщение – и вызов в работе.">Wir antworten mit Zeitfenster und Preis für die Standardarbeit. Eine Nachricht – und der Termin läuft.</p>
             <div class="close__cta">
-              <a class="v-btn" href="{{Anfrage-Link}}" rel="noopener" data-v-magnet="0.22" data-ru="Вызвать мастера">Anfragen</a>
-              <a class="close__tel" href="tel:{{Telefon}}">{{Telefon}}</a>
+              <a class="v-btn" href="https://wa.me/493055501742" rel="noopener" data-v-magnet="0.22" data-ru="Вызвать мастера">Anfragen</a>
+              <a class="close__tel" href="tel:+493055501742">+49 30 555 017 42</a>
             </div>
             <p class="close__hint" data-ru="В мессенджере отвечаем в часы приёма вызовов. Не любите писать – звоните, интервал и цену назовём по телефону.">Im Messenger antworten wir in den Annahmezeiten. Schreiben ist nichts für Sie – rufen Sie an, Zeitfenster und Preis nennen wir auch am Telefon.</p>
           </div>
           <div class="close__meta" data-v-in data-v-stagger="60">
-            <span><b data-ru="Принимаем вызовы">Annahmezeiten</b>{{Öffnungszeiten}}</span>
-            <span><b data-ru="Интервал приезда">Anfahrtsintervall</b>{{Zeitfenster}}</span>
-            <span><b data-ru="Выезжаем">Einsatzgebiet</b>{{Einsatzgebiet}}</span>
+            <span><b data-ru="Принимаем вызовы">Annahmezeiten</b>Mo–Sa 8–20 Uhr</span>
+            <span><b data-ru="Интервал приезда">Anfahrtsintervall</b><i data-ru="сегодня 16–18">heute 16–18 Uhr</i></span>
+            <span><b data-ru="Выезжаем">Einsatzgebiet</b><i data-ru="Берлин и окрестности (20 км)">Berlin und Umland (20 km)</i></span>
           </div>
         </div>
         <footer class="foot">
-          <span>{{Firma}} · {{Stadt}}</span>
-          <span data-slot-optional data-ru="Импрессум: {{Impressum-Angaben}}">Impressum: {{Impressum-Angaben}}</span>
-          <span class="foot__more" data-ru="Сантехник и электрик с выездом на дом: течи, смесители, унитазы, розетки, автоматы">Klempner und Elektriker auf Vor-Ort-Termin: Lecks, Armaturen, WC, Steckdosen, Sicherungen</span>
+          <div class="foot__grid">
+            <div class="foot__brand">
+              <span class="foot__logo"><i aria-hidden="true"></i>FixWerk <em>Meisterbetrieb</em></span>
+              <p data-ru="Сантехник и электрик с выездом на дом: течи, смесители, унитазы, розетки, автоматы. Берлин и окрестности.">Klempner und Elektriker auf Vor-Ort-Termin: Lecks, Armaturen, WC, Steckdosen, Sicherungen. Berlin und Umland.</p>
+            </div>
+            <div class="foot__col">
+              <b data-ru="Контакты">Kontakt</b>
+              <a href="tel:+493055501742">+49 30 555 017 42</a>
+              <a href="https://wa.me/493055501742" rel="noopener">WhatsApp</a>
+              <span data-ru="Приём вызовов: пн–сб 8:00–20:00">Annahme: Mo–Sa 8–20 Uhr</span>
+              <span data-ru="Интервал приезда: сегодня 16–18">Anfahrt: heute 16–18 Uhr</span>
+            </div>
+            <div class="foot__col">
+              <b data-ru="Разделы">Rubriken</b>
+              <a href="#kak" data-ru="Как проходит вызов">Ablauf</a>
+              <a href="#ceny" data-ru="Цены">Preise</a>
+              <a href="#garantiya" data-ru="Гарантия">Garantie</a>
+              <a href="#otzyvy" data-ru="Отзывы">Bewertungen</a>
+              <a href="#vyzov" data-ru="Контакт">Kontakt</a>
+            </div>
+          </div>
+          <div class="foot__legal">
+            <span>© 2026 FixWerk Meisterbetrieb GmbH · Berlin</span>
+            <span>Impressum: FixWerk Meisterbetrieb GmbH · Linienstraße 88, 10117 Berlin · Geschäftsführer: Max Berger · Handelsregister: HRB 217 995 B · USt-IdNr: DE 355 017 042 · Telefon: +49 30 555 017 42</span>
+          </div>
         </footer>
       </div>
     </section>
@@ -475,7 +557,7 @@
       </ol>
       <span class="track__marker"></span>
     </div>
-    <a class="v-btn track__btn" href="{{Anfrage-Link}}" rel="noopener" data-ru="Вызвать мастера">Anfragen</a>
+    <a class="v-btn track__btn" href="https://wa.me/493055501742" rel="noopener" data-ru="Вызвать мастера">Anfragen</a>
   </aside>
 </div>
 
@@ -489,9 +571,9 @@
     document.querySelectorAll('.bar__lang a').forEach(function (a) { a.classList.toggle('is-on', a.getAttribute('data-lang') === lang); });
     if (lang !== 'ru') return;
     document.documentElement.lang = 'ru';
-    document.title = '{{Firma}} · Сантехник и электрик на дом';
+    document.title = 'FixWerk Meisterbetrieb · Сантехник и электрик на дом';
     var md = document.querySelector('meta[name="description"]');
-    if (md) md.setAttribute('content', 'Сантехник и электрик с выездом на дом в {{Stadt}}: интервал приезда и цена на типовую работу до выезда, стандартные детали с собой, гарантия на работу письменно.');
+    if (md) md.setAttribute('content', 'Сантехник и электрик с выездом на дом в Берлине: интервал приезда и цена на типовую работу до выезда, стандартные детали с собой, гарантия на работу письменно.');
     var og = document.querySelector('meta[property="og:locale"]');
     if (og) og.setAttribute('content', 'ru_RU');
     document.querySelectorAll('[data-ru]').forEach(function (el) { el.innerHTML = el.getAttribute('data-ru'); });
